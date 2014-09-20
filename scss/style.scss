@@ -1,0 +1,67 @@
+// Dimensions
+$navHeight: 60px;
+$footerTopPadding: 10px;
+
+// Colours
+$silver: #f5f5f5; //grey
+$amethyst: #a66bbe; //purple
+$peterRiver: #3498db; //blue
+$asbestos: #7f8c8d; //grey
+
+// Functional colours
+$navbg: $peterRiver;
+$splashbg: $amethyst;
+$mainbg: $silver;
+
+// Some reset styles
+* {
+  margin:0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+.col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Main styles
+html {
+  position: relative;
+  height: 100%;
+}
+body {
+  position: relative;
+  min-height: 100%;
+  
+  &::-webkit-scrollbar {
+      width: 12px;
+      background: rgba($asbestos,0.4); 
+  }
+  &::-webkit-scrollbar-thumb {
+      background: rgba($asbestos,0.8); 
+  }
+}
+
+div#splash-wrapper {
+  position: relative;
+  height: 100%;
+  margin-bottom: $navHeight;
+  background-color: $splashbg;
+  
+  nav {
+    position: absolute;
+    bottom: -$navHeight;
+    width: 100%;
+    height: $navHeight;
+    background-color: $navbg;
+  }
+}
+
+section#main {
+  background-color: $mainbg;
+}
+
+footer {
+  padding-top: $footerTopPadding;
+}
