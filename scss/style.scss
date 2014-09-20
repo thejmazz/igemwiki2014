@@ -48,13 +48,38 @@ div#splash-wrapper {
   height: 100%;
   margin-bottom: $navHeight;
   background-color: $splashbg;
+  color: white;
+  
+  canvas#canvas {
+    position: absolute;
+    display: block;
+    z-index: 1;
+  }
+  
+  section#splash {
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+    
+    // Watch out for overflow on this element!
+    overflow-y: scroll;
+    
+    &::-webkit-scrollbar {
+        width: 12px;
+        background: black; 
+    }
+    &::-webkit-scrollbar-thumb {
+        background: green; 
+    }
+  }
   
   nav {
     position: absolute;
+    z-index: 9999;
     bottom: -$navHeight;
     width: 100%;
     height: $navHeight;
-    background-color: $navbg;
+    background-color: rgba($navbg, 0.5);
   }
 }
 
