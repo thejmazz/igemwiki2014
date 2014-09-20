@@ -7,7 +7,7 @@
 	    <meta name="description" content="">
 	    <meta name="author" content="">
 	    
-	    <link rel="icon" href="img/favicon.ico">
+	    <link rel="icon"  type="image/gif" href="img/favicon-animated.gif">
 
 		<title>Team:Toronto - 2014.igem.org</title>
 		
