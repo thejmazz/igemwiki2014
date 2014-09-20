@@ -4,7 +4,7 @@
 					<a href="#">Back to top</a>
 				</p>
 				<p>
-					&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+					2014 University of Toronto iGEM
 				</p>
 			</footer>
 		</div><!-- /.container -->
