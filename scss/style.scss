@@ -64,8 +64,9 @@ body {
   }
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
+  margin-top: 10px;
   font-family: 'Bangers', cursive;
   text-align: center;
   
@@ -96,6 +97,25 @@ h1 {
     
     border: 2px solid white;
     //background-color: rgba(white, 0.2);
+  }
+}
+
+h4, h5, h6 {
+  
+  &:before, &:after {
+    background-color: black;
+  }
+  
+  span {
+    color: black;
+    border-color: black;
+  }
+}
+
+h5 span, h6 span {
+  // webkit seems to draw bottom border too thin for h5 and h6
+  @media screen and (-webkit-min-device-pixel-ratio:0) {  
+    border-bottom-width: 3px;
   }
 }
 

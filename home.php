@@ -49,24 +49,35 @@ include ('header.php');
 	<div id="main-inner">
 		<div class="first container-wrapper">
 			<div class="container">
-				<?php
-				include ('lorem.php');
-				?>
-				<?php
-					include ('lorem.php');
-				?>
+				<?php include ('lorem.php'); ?>
+				<?php include ('lorem.php'); ?>
 			</div>
 		</div>
 		<h1><span>Heading 1</span></h1>
 		<div class="container-wrapper">
 			<div class="container">
-				
-				<?php
-					include ('lorem.php');
-				?>
-				<?php
-					include ('lorem.php');
-				?>
+				<?php include ('lorem.php'); ?>
+				<?php include ('lorem.php'); ?>
+			</div>
+		</div>
+		<h2><span>Heading 2</span></h2>
+		<div class="container-wrapper">
+			<div class="container">
+				<?php include ('lorem.php'); ?>
+				<?php include ('lorem.php'); ?>
+			</div>
+		</div>
+		<h3><span>Heading 3</span></h3>
+		<div class="container-wrapper">
+			<div class="container">
+				<?php include ('lorem.php'); ?>
+				<h4><span>Heading 4</span></h4>
+				<?php include ('lorem.php'); ?>
+				<?php include ('lorem.php'); ?>
+				<h5><span>Heading 5</span></h5>
+				<?php include ('lorem.php'); ?>
+				<h6><span>Heading 6</span></h6>
+				<?php include ('lorem.php'); ?>
 			</div>
 		</div>
 	<!--</div>--> 

@@ -30,11 +30,12 @@ body {
   body::-webkit-scrollbar-thumb {
     background: rgba(127, 140, 141, 0.8); }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
+  margin-top: 10px;
   font-family: 'Bangers', cursive;
   text-align: center; }
-  h1:before, h1:after {
+  h1:before, h1:after, h2:before, h2:after, h3:before, h3:after, h4:before, h4:after, h5:before, h5:after, h6:before, h6:after {
     background-color: white;
     content: "";
     display: inline-block;
@@ -42,19 +43,29 @@ h1 {
     position: relative;
     vertical-align: middle;
     width: 50%; }
-  h1:before {
+  h1:before, h2:before, h3:before, h4:before, h5:before, h6:before {
     right: 0px;
     margin-left: -50%; }
-  h1:after {
+  h1:after, h2:after, h3:after, h4:after, h5:after, h6:after {
     left: 0px;
     margin-right: -50%; }
-  h1 span {
+  h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
     color: white;
     display: inline-block;
     padding: 0.5em;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
     border: 2px solid white; }
+
+h4:before, h4:after, h5:before, h5:after, h6:before, h6:after {
+  background-color: black; }
+h4 span, h5 span, h6 span {
+  color: black;
+  border-color: black; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  h5 span, h6 span {
+    border-bottom-width: 3px; } }
 
 canvas#canvas {
   position: fixed;
