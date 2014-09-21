@@ -81,6 +81,13 @@ div#splash-wrapper {
     z-index: 9999;
     bottom: -40px;
     height: 40px; }
+    div#splash-wrapper nav.stuck {
+      position: fixed;
+      top: 0; }
+    div#splash-wrapper nav.free {
+      position: absolute;
+      z-index: 9999;
+      bottom: -40px; }
     div#splash-wrapper nav ul {
       margin: 0; }
       div#splash-wrapper nav ul li {
@@ -114,7 +121,7 @@ div#splash-wrapper {
 section#main {
   position: absolute;
   width: 100%;
-  z-index: 9999; }
+  z-index: 9998; }
   section#main .container-wrapper {
     background-color: whitesmoke; }
   section#main footer {

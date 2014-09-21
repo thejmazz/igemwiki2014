@@ -10,13 +10,26 @@ var x = Math.random() * (cw - d), y = Math.random() * (ch - d);
 var speedX = 5, speedY = 5;
 var directionX = 1, directionY = 1;
 
+var topDist;
+
 $(document).ready(function() {
 	main();
 });
 
 function main(){
 	resizeCanvas();
-	window.addEventListener('resize', resizeCanvas, false);
+	window.addEventListener('resize', resizeCanvas, false);	
+	
+	$(document).scroll(function () {
+        var scroll = $(this).scrollTop();
+        if (scroll >= topDist.top) {
+        	$('nav').removeClass('free');
+            $('nav').addClass('stuck');
+        } else if (scroll < topDist.top){
+            $('nav').removeClass('stuck');
+            $('nav').addClass('free');
+        }
+    });
 }
 
 function resizeCanvas() {
@@ -25,6 +38,8 @@ function resizeCanvas() {
 	cx = cw / 2;
 	cy = ch / 2;
 	resizeRelativeToWindow('#splash-wrapper', $navHeight);
+	topDist = $("nav").offset();
+	console.log(topDist);
 }
 
 function resizeRelativeToWindow(element, bottomMargin) {

@@ -137,6 +137,16 @@ div#splash-wrapper {
     height: $navHeight;
     //background-color: rgba($navbg, 0.5);
     
+    &.stuck {
+      position: fixed;
+      top: 0;
+    }
+    &.free {
+      position: absolute;
+      z-index: 9999;
+      bottom: -$navHeight;
+    }
+    
     ul {
       margin: 0;
       
@@ -187,7 +197,7 @@ div#splash-wrapper {
 section#main {
   position: absolute;
   width: 100%;
-  z-index: 9999;
+  z-index: 9998;
   
   .container-wrapper {
     background-color: $mainbg;
