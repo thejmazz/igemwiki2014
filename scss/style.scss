@@ -1,5 +1,6 @@
 // Dimensions
-$navHeight: 60px;
+// Make sure this is as the same value as in js/main.js
+$navHeight: 40px;
 $footerTopPadding: 10px;
 
 // Colours
@@ -12,6 +13,14 @@ $asbestos: #7f8c8d; //grey
 $navbg: $peterRiver;
 $splashbg: $amethyst;
 $mainbg: $silver;
+
+// Mixins
+@mixin transition($duration, $speed:ease){
+  -webkit-transition: all $duration $speed;
+  -moz-transition: all $duration $speed;
+  -o-transition: all $duration $speed;
+  transition: all $duration $speed;
+}
 
 /* Fonts
  * font-family: 'Ropa Sans', sans-serif;
@@ -124,9 +133,47 @@ div#splash-wrapper {
     position: absolute;
     z-index: 9999;
     bottom: -$navHeight;
-    width: 100%;
+    //width: 100%;
     height: $navHeight;
-    background-color: rgba($navbg, 0.5);
+    //background-color: rgba($navbg, 0.5);
+    
+    ul {
+      margin: 0;
+      
+      li {
+        float: left;
+        list-style-type: none;
+        //background-color: white;
+        //margin-right: 10px;
+        font-family: 'Bangers', cursive;
+        text-transform: capitalize;
+        font-size: 2em;
+        line-height: $navHeight;
+        height: $navHeight;
+        @include transition(500ms);
+        
+        &.active {
+          background-color: $mainbg;
+          
+          a {
+            color: black;
+          }
+        }
+        
+        &:hover {
+          background-color: rgba($mainbg, 0.5);
+        }
+        
+        a {
+          padding: 10px;
+          color: white;
+          
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -134,13 +181,13 @@ section#main {
   position: absolute;
   width: 100%;
   z-index: 9999;
-}
-
-.container-wrapper {
-  background-color: $mainbg;
-}
-
-footer {
-  position: relative;
-  padding-top: $footerTopPadding;
+  
+  .container-wrapper {
+    background-color: $mainbg;
+  }
+  
+  footer {
+    position: relative;
+    padding-top: $footerTopPadding;
+  }
 }

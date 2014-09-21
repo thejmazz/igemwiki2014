@@ -13,13 +13,36 @@ include ('header.php');
 			</p>
 		</div>
 	</section>
-	<nav>
-		<div class="container">
-			<p class="text-muted">
-				HOME / TEAM / PROJECT / PARTS / MODELING / NOTEBOOK / SAFETY / ATTRIBUTIONS
-			</p>
-		</div>
-	</nav>
+	<div class="container">
+		<nav>
+			<ul>
+				<li class="active">
+					<a href=#>Home</a>
+				</li>
+				<li>
+					<a href=#>Team</a>
+				</li>
+				<li>
+					<a href=#>Project</a>
+				</li>
+				<li>
+					<a href=#>Parts</a>
+				</li>
+				<li>
+					<a href=#>Modeling</a>
+				</li>
+				<li>
+					<a href=#>Notebook</a>
+				</li>
+				<li>
+					<a href=#>Safety</a>
+				</li>
+				<li>
+					<a href=#>Attributions</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
 </div>
 
 <section id="main">

@@ -1,5 +1,5 @@
 // Make sure this is as the same value as in scss/style.scss
-var $navHeight = 60;
+var $navHeight = 40;
 // Canvas
 var canvas = document.getElementById('canvas'), ctx = canvas.getContext('2d'), cx, cy;
 var cw = canvas.width = $('html').width();
