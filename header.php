@@ -40,6 +40,9 @@
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 		
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		
 		<!-- Main styles -->
 		<!-- See scss/style.scss for styles prior to compiling -->
 		<link rel="stylesheet" href="css/style.css">

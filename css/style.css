@@ -89,12 +89,10 @@ div#splash-wrapper {
         font-family: 'Bangers', cursive;
         text-transform: capitalize;
         font-size: 2em;
-        line-height: 40px;
-        height: 40px;
-        -webkit-transition: all 500ms ease;
-        -moz-transition: all 500ms ease;
-        -o-transition: all 500ms ease;
-        transition: all 500ms ease; }
+        -webkit-transition: all 250ms ease;
+        -moz-transition: all 250ms ease;
+        -o-transition: all 250ms ease;
+        transition: all 250ms ease; }
         div#splash-wrapper nav ul li.active {
           background-color: whitesmoke; }
           div#splash-wrapper nav ul li.active a {
@@ -103,7 +101,13 @@ div#splash-wrapper {
           background-color: rgba(245, 245, 245, 0.5); }
         div#splash-wrapper nav ul li a {
           padding: 10px;
-          color: white; }
+          color: white;
+          line-height: 40px;
+          height: 40px; }
+          div#splash-wrapper nav ul li a .fa {
+            font-size: 0.6em;
+            vertical-align: middle;
+            padding-right: 5px; }
           div#splash-wrapper nav ul li a:hover {
             text-decoration: none; }
 

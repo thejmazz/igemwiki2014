@@ -148,9 +148,8 @@ div#splash-wrapper {
         font-family: 'Bangers', cursive;
         text-transform: capitalize;
         font-size: 2em;
-        line-height: $navHeight;
-        height: $navHeight;
-        @include transition(500ms);
+        
+        @include transition(250ms);
         
         &.active {
           background-color: $mainbg;
@@ -167,6 +166,14 @@ div#splash-wrapper {
         a {
           padding: 10px;
           color: white;
+          line-height: $navHeight;
+          height: $navHeight;
+          
+          .fa {
+            font-size: 0.6em;
+            vertical-align: middle;
+            padding-right: 5px;
+          }
           
           &:hover {
             text-decoration: none;

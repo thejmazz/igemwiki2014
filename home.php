@@ -17,28 +17,28 @@ include ('header.php');
 		<nav>
 			<ul>
 				<li class="active">
-					<a href=#>Home</a>
+					<a href=#><i class="fa fa-home"></i>Home</a>
 				</li>
 				<li>
-					<a href=#>Team</a>
+					<a href=#><i class="fa fa-users"></i> Team</a>
 				</li>
 				<li>
-					<a href=#>Project</a>
+					<a href=#><i class="fa fa-gears"></i> Project</a>
 				</li>
 				<li>
-					<a href=#>Parts</a>
+					<a href=#><i class="fa fa-wrench"></i> Parts</a>
 				</li>
 				<li>
-					<a href=#>Modeling</a>
+					<a href=#><i class="fa fa-line-chart"></i> Modeling</a>
 				</li>
 				<li>
-					<a href=#>Notebook</a>
+					<a href=#><i class="fa fa-book"></i> Notebook</a>
 				</li>
 				<li>
-					<a href=#>Safety</a>
+					<a href=#><i class="fa fa-exclamation-triangle"></i> Safety</a>
 				</li>
 				<li>
-					<a href=#>Attributions</a>
+					<a href=#><i class="fa fa-asterisk"></i> Attributions</a>
 				</li>
 			</ul>
 		</nav>
