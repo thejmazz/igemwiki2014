@@ -1,3 +1,11 @@
+/* Fonts
+ * font-family: 'Ropa Sans', sans-serif;
+ * font-family: 'Contrail One', cursive;
+ * font-family: 'Walter Turncoat', cursive;
+ * font-family: 'Voltaire', sans-serif;
+ * font-family: 'Bangers', cursive;
+ * font-family: 'Oswald', sans-serif;
+ */
 * {
   margin: 0;
   padding: 0;
@@ -17,9 +25,36 @@ body {
   min-height: 100%; }
   body::-webkit-scrollbar {
     width: 12px;
-    background: rgba(127, 140, 141, 0.4); }
+    background: rgba(127, 140, 141, 0.4);
+    opacity: 0; }
   body::-webkit-scrollbar-thumb {
     background: rgba(127, 140, 141, 0.8); }
+
+h1 {
+  overflow: hidden;
+  font-family: 'Bangers', cursive;
+  text-align: center; }
+  h1:before, h1:after {
+    background-color: white;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%; }
+  h1:before {
+    right: 0px;
+    margin-left: -50%; }
+  h1:after {
+    left: 0px;
+    margin-right: -50%; }
+  h1 span {
+    color: white;
+    display: inline-block;
+    padding: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border: 2px solid white; }
 
 canvas#canvas {
   position: fixed;

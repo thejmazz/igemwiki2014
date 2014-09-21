@@ -44,6 +44,9 @@
 		<!-- See scss/style.scss for styles prior to compiling -->
 		<link rel="stylesheet" href="css/style.css">
 		
+		<!-- Google fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Ropa+Sans:400,400italic|Contrail+One|Walter+Turncoat|Voltaire|Bangers|Oswald:400,300,700' rel='stylesheet' type='text/css'>
+		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!--[if lt IE 9]>
 	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

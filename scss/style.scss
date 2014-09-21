@@ -13,6 +13,15 @@ $navbg: $peterRiver;
 $splashbg: $amethyst;
 $mainbg: $silver;
 
+/* Fonts
+ * font-family: 'Ropa Sans', sans-serif;
+ * font-family: 'Contrail One', cursive;
+ * font-family: 'Walter Turncoat', cursive;
+ * font-family: 'Voltaire', sans-serif;
+ * font-family: 'Bangers', cursive;
+ * font-family: 'Oswald', sans-serif;
+ */
+
 // Some reset styles
 * {
   margin:0; 
@@ -37,16 +46,55 @@ body {
   &::-webkit-scrollbar {
       width: 12px;
       background: rgba($asbestos,0.4); 
+      opacity: 0;
   }
   &::-webkit-scrollbar-thumb {
       background: rgba($asbestos,0.8); 
   }
 }
-canvas#canvas {
-    position: fixed;
-    display: block;
-    z-index: 1;
+
+h1 {
+  overflow: hidden;
+  font-family: 'Bangers', cursive;
+  text-align: center;
+  
+  &:before, &:after {
+    background-color: white;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
   }
+  &:before {
+    //right: 0.5em;
+    right: 0px;
+    margin-left: -50%;
+  }
+  &:after {
+    //left: 0.5em;
+    left: 0px;
+    margin-right: -50%;
+  }
+  
+  span {
+    color: white;
+    display: inline-block;
+    padding: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    
+    border: 2px solid white;
+    //background-color: rgba(white, 0.2);
+  }
+}
+
+canvas#canvas {
+  position: fixed;
+  display: block;
+  z-index: 1;
+}
 
 div#splash-wrapper {
   position: relative;
@@ -55,14 +103,12 @@ div#splash-wrapper {
   background-color: $splashbg;
   color: white;
   
-  
-  
   section#splash {
     position: absolute;
     width: 100%;
     z-index: 9999;
     
-    // Watch out for overflow on this element!
+    // Overflow applied in resizeRelativeToWindow in main.js
     //overflow-y: scroll;
     
     &::-webkit-scrollbar {
