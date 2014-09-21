@@ -42,6 +42,11 @@ body {
       background: rgba($asbestos,0.8); 
   }
 }
+canvas#canvas {
+    position: fixed;
+    display: block;
+    z-index: 1;
+  }
 
 div#splash-wrapper {
   position: relative;
@@ -50,11 +55,7 @@ div#splash-wrapper {
   background-color: $splashbg;
   color: white;
   
-  canvas#canvas {
-    position: absolute;
-    display: block;
-    z-index: 1;
-  }
+  
   
   section#splash {
     position: absolute;
@@ -84,9 +85,16 @@ div#splash-wrapper {
 }
 
 section#main {
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}
+
+.container-wrapper {
   background-color: $mainbg;
 }
 
 footer {
+  position: relative;
   padding-top: $footerTopPadding;
 }

@@ -21,16 +21,17 @@ body {
   body::-webkit-scrollbar-thumb {
     background: rgba(127, 140, 141, 0.8); }
 
+canvas#canvas {
+  position: fixed;
+  display: block;
+  z-index: 1; }
+
 div#splash-wrapper {
   position: relative;
   height: 100%;
   margin-bottom: 60px;
   background-color: #a66bbe;
   color: white; }
-  div#splash-wrapper canvas#canvas {
-    position: absolute;
-    display: block;
-    z-index: 1; }
   div#splash-wrapper section#splash {
     position: absolute;
     width: 100%;
@@ -49,7 +50,13 @@ div#splash-wrapper {
     background-color: rgba(52, 152, 219, 0.5); }
 
 section#main {
+  position: absolute;
+  width: 100%;
+  z-index: 9999; }
+
+.container-wrapper {
   background-color: whitesmoke; }
 
 footer {
+  position: relative;
   padding-top: 10px; }

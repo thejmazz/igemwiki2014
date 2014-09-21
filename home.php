@@ -1,9 +1,9 @@
 <?php
 include ('header.php');
 ?>
+<canvas id="canvas"></canvas>
+
 <div id="splash-wrapper">
-	<canvas id="canvas"></canvas>
-	
 	<section id="splash" style="position:absolute;">
 		<div class="container">
 			<div class="page-header">
@@ -24,13 +24,30 @@ include ('header.php');
 </div>
 
 <section id="main">
-	<div class="container">
-		<?php include('lorem.php'); ?>
-		<?php include('lorem.php'); ?>
-		<?php include('lorem.php'); ?>
-		<?php include('lorem.php'); ?>
+	<div class="container-wrapper">
+		<div class="container">
+			<?php
+			include ('lorem.php');
+			?>
+			<?php
+				include ('lorem.php');
+			?>
+		</div>
 	</div>
-</section>
+	<div style="height:100px; opacity:0.5;"></div>
+	<div class="container-wrapper">
+		<div class="container">
+			
+			<?php
+				include ('lorem.php');
+			?>
+			<?php
+				include ('lorem.php');
+			?>
+		</div>
+	</div>
+
+<!--</section>-->
 
 <?php
 include ('footer.php');
