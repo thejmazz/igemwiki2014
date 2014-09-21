@@ -46,28 +46,30 @@ include ('header.php');
 </div>
 
 <section id="main">
-	<div class="container-wrapper">
-		<div class="container">
-			<?php
-			include ('lorem.php');
-			?>
-			<?php
+	<div id="main-inner">
+		<div class="first container-wrapper">
+			<div class="container">
+				<?php
 				include ('lorem.php');
-			?>
+				?>
+				<?php
+					include ('lorem.php');
+				?>
+			</div>
 		</div>
-	</div>
-	<h1><span>Heading 1</span></h1>
-	<div class="container-wrapper">
-		<div class="container">
-			
-			<?php
-				include ('lorem.php');
-			?>
-			<?php
-				include ('lorem.php');
-			?>
+		<h1><span>Heading 1</span></h1>
+		<div class="container-wrapper">
+			<div class="container">
+				
+				<?php
+					include ('lorem.php');
+				?>
+				<?php
+					include ('lorem.php');
+				?>
+			</div>
 		</div>
-	</div>
+	<!--</div>--> 
 
 <!--</section>-->
 

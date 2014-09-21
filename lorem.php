@@ -1,4 +1,4 @@
-<div class="lorem" style="width:100%; margin:0 auto;">
+<div class="lorem" style="width:600px; margin:0 auto;">
 		Lorem ipsum dolor sit amet, mel at reprehendunt comprehensam, erant iusto exerci at usu. Usu ornatus rationibus cu, sed veritus minimum te, quas novum percipitur ut vis. Ea mei accusamus disputando, qui eros duis aliquando cu. Dicunt mandamus reprimique te sea. Tation hendrerit sea eu, ut harum aliquid vix. <br>
 
 Pro posse lobortis an. Ea has paulo definiebas. Usu et doctus mentitum. Ea mea iisque accumsan, paulo utroque reprimique ea per, agam erant pri ex. Quodsi timeam perfecto mel ei, ius ex odio tamquam quaeque. Eruditi fabellas eum ut, per et illud propriae, eu error utroque mnesarchum mei. <br>

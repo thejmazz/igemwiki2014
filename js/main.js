@@ -1,5 +1,6 @@
 // Make sure this is as the same value as in scss/style.scss
-var $navHeight = 40;
+var $navHeight = 42;
+var $navBorder = 2;
 // Canvas
 var canvas = document.getElementById('canvas'), ctx = canvas.getContext('2d'), cx, cy;
 var cw = canvas.width = $('html').width();
@@ -26,6 +27,8 @@ function main(){
         if (scroll >= topDist.top) {
         	$('nav').removeClass('free');
             $('nav').addClass('stuck');
+            
+            $('#main').height($('html').height() - $navHeight);
         } else if (scroll < topDist.top){
             $('nav').removeClass('stuck');
             $('nav').addClass('free');
@@ -44,7 +47,7 @@ function resizeCanvas() {
 }
 
 function resizeRelativeToWindow(element, bottomMargin) {
-	$(element).height($('html').height() - $navHeight);
+	$(element).height($('html').height() - $navHeight + $navBorder);
 	$('#splash').height($(element).height());
 	
 	// This prevents FF from showing scrollbar when not necessary

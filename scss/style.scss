@@ -1,6 +1,7 @@
 // Dimensions
 // Make sure this is as the same value as in js/main.js
-$navHeight: 40px;
+$navHeight: 42px;
+$navBorder: 2px;
 $footerTopPadding: 10px;
 
 // Colours
@@ -48,6 +49,7 @@ html {
   position: relative;
   height: 100%;
 }
+
 body {
   position: relative;
   min-height: 100%;
@@ -77,12 +79,10 @@ h1 {
     width: 50%;
   }
   &:before {
-    //right: 0.5em;
     right: 0px;
     margin-left: -50%;
   }
   &:after {
-    //left: 0.5em;
     left: 0px;
     margin-right: -50%;
   }
@@ -135,12 +135,14 @@ div#splash-wrapper {
     bottom: -$navHeight;
     width: 100%;
     height: $navHeight;
+    border-bottom: $navBorder solid $mainbg; 
     @include transition(250ms);
+    //background-color: $navbg;
     
     &.stuck {
       position: fixed;
       top: 0;
-      background-color: $navbg;
+      //background-color: $navbg;
     }
     &.free {
       position: absolute;
@@ -148,14 +150,17 @@ div#splash-wrapper {
       bottom: -$navHeight;
     }
     
+    &:hover {
+      background-color: $navbg;
+    }
+    
     ul {
       margin: 0;
+      
       
       li {
         float: left;
         list-style-type: none;
-        //background-color: white;
-        //margin-right: 10px;
         font-family: 'Bangers', cursive;
         text-transform: capitalize;
         font-size: 2em;
@@ -177,8 +182,8 @@ div#splash-wrapper {
         a {
           padding: 10px;
           color: white;
-          line-height: $navHeight;
-          height: $navHeight;
+          height: $navHeight - $navBorder;
+          line-height: $navHeight - $navBorder;
           
           .fa {
             font-size: 0.6em;
@@ -197,11 +202,21 @@ div#splash-wrapper {
 
 section#main {
   position: absolute;
+  overflow: hidden;
   width: 100%;
   z-index: 9998;
   
+  #main-inner {
+    position: absolute;
+    width: 100%;
+  }
+  
   .container-wrapper {
     background-color: $mainbg;
+    
+    &.first {
+      padding-top: 15px;
+    }
   }
   
   footer {
