@@ -24,13 +24,21 @@ function resizeCanvas() {
 	ch = canvas.height = $('html').height();
 	cx = cw / 2;
 	cy = ch / 2;
-	
 	resizeRelativeToWindow('#splash-wrapper', $navHeight);
 }
 
 function resizeRelativeToWindow(element, bottomMargin) {
 	$(element).height($('html').height() - $navHeight);
-	
 	$('#splash').height($(element).height());
-	console.log($(element).height() + 'px');
+	
+	// This prevents FF from showing scrollbar when not necessary
+	if($('#splash .container').height() > $(element).height() ){
+		$('#splash').css({
+			'overflow-y': 'scroll'
+		});
+	} else {
+		$('#splash').css({
+			'overflow-y': 'hidden'
+		});
+	}
 }

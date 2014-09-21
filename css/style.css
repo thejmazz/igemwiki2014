@@ -34,8 +34,7 @@ div#splash-wrapper {
   div#splash-wrapper section#splash {
     position: absolute;
     width: 100%;
-    z-index: 9999;
-    overflow-y: scroll; }
+    z-index: 9999; }
     div#splash-wrapper section#splash::-webkit-scrollbar {
       width: 12px;
       background: black; }
