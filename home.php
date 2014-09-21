@@ -13,8 +13,8 @@ include ('header.php');
 			</p>
 		</div>
 	</section>
-	<div class="container">
-		<nav>
+	<nav>
+		<div class="container">
 			<ul>
 				<li class="active">
 					<a href=#><i class="fa fa-home"></i>Home</a>
@@ -41,8 +41,8 @@ include ('header.php');
 					<a href=#><i class="fa fa-asterisk"></i> Attributions</a>
 				</li>
 			</ul>
-		</nav>
-	</div>
+		</div>
+	</nav>
 </div>
 
 <section id="main">

@@ -133,13 +133,14 @@ div#splash-wrapper {
     position: absolute;
     z-index: 9999;
     bottom: -$navHeight;
-    //width: 100%;
+    width: 100%;
     height: $navHeight;
-    //background-color: rgba($navbg, 0.5);
+    @include transition(250ms);
     
     &.stuck {
       position: fixed;
       top: 0;
+      background-color: $navbg;
     }
     &.free {
       position: absolute;

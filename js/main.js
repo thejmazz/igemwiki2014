@@ -20,6 +20,7 @@ function main(){
 	resizeCanvas();
 	window.addEventListener('resize', resizeCanvas, false);	
 	
+	
 	$(document).scroll(function () {
         var scroll = $(this).scrollTop();
         if (scroll >= topDist.top) {
