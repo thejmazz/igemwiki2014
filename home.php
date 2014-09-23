@@ -23,22 +23,22 @@ include ('header.php');
 					<a href='#/team'><i class="fa fa-users"></i> Team</a>
 				</li>
 				<li>
-					<a href=#><i class="fa fa-gears"></i> Project</a>
+					<a href='#/project'><i class="fa fa-gears"></i> Project</a>
 				</li>
 				<li>
-					<a href=#><i class="fa fa-wrench"></i> Parts</a>
+					<a href='#/parts'><i class="fa fa-wrench"></i> Parts</a>
 				</li>
 				<li>
-					<a href=#><i class="fa fa-line-chart"></i> Modeling</a>
+					<a href='#/modeling'><i class="fa fa-line-chart"></i> Modeling</a>
 				</li>
 				<li>
-					<a href=#><i class="fa fa-book"></i> Notebook</a>
+					<a href='#/notebook'><i class="fa fa-book"></i> Notebook</a>
 				</li>
 				<li>
-					<a href=#><i class="fa fa-exclamation-triangle"></i> Safety</a>
+					<a href='#/safety'><i class="fa fa-exclamation-triangle"></i> Safety</a>
 				</li>
 				<li>
-					<a href=#><i class="fa fa-asterisk"></i> Attributions</a>
+					<a href='#/attributions'><i class="fa fa-asterisk"></i> Attributions</a>
 				</li>
 			</ul>
 		</div>
@@ -48,39 +48,6 @@ include ('header.php');
 <section id="main">
 	<div id="main-inner">
 		<div id="view" ng-view></div>
-		<!--<div class="first container-wrapper">
-			<div class="container">
-				<?php include ('lorem.php'); ?>
-				<?php include ('lorem.php'); ?>
-			</div>
-		</div>
-		<h1><span>Heading 1</span></h1>
-		<div class="container-wrapper">
-			<div class="container">
-				<?php include ('lorem.php'); ?>
-				<?php include ('lorem.php'); ?>
-			</div>
-		</div>
-		<h2><span>Heading 2</span></h2>
-		<div class="container-wrapper">
-			<div class="container">
-				<?php include ('lorem.php'); ?>
-				<?php include ('lorem.php'); ?>
-			</div>
-		</div>
-		<h3><span>Heading 3</span></h3>
-		<div class="container-wrapper">
-			<div class="container">
-				<?php include ('lorem.php'); ?>
-				<h4><span>Heading 4</span></h4>
-				<?php include ('lorem.php'); ?>
-				<?php include ('lorem.php'); ?>
-				<h5><span>Heading 5</span></h5>
-				<?php include ('lorem.php'); ?>
-				<h6><span>Heading 6</span></h6>
-				<?php include ('lorem.php'); ?>
-			</div>
-		</div>-->
 	<!--</div>--> 
 
 <!--</section>-->
