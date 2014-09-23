@@ -61,6 +61,8 @@
 		<!-- AngularJS actual app -->
 		<script src="js/app.js"></script>
 		
+		<!-- all other scripts loaded just before closing of body tag in footer.php -->
+		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!--[if lt IE 9]>
 	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

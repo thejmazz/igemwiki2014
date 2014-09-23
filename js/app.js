@@ -1,5 +1,4 @@
 var app = angular.module('mytabs', ['ngRoute']);
-var viewHeight;
 
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
   $routeProvider.
@@ -28,10 +27,10 @@ function TabsCtrl($scope, $location) {
 }
 
 function TeamCtrl($scope) {
-	viewHeight = $('#view').height();
+	viewHeight = $('#view').height() + $('#footer').height();
 	checkScroll();
 }
 function HomeCtrl($scope) {
-	viewHeight = $('#view').height();
+	viewHeight = $('#view').height() + $('#footer').height();
 	checkScroll();
 }
