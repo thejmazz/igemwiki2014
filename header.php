@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="mytabs" lang="en">
 	<head>
 		<!-- Meta -->
 		<meta charset="utf-8">
@@ -49,6 +49,17 @@
 		
 		<!-- Google fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Ropa+Sans:400,400italic|Contrail+One|Walter+Turncoat|Voltaire|Bangers|Oswald:400,300,700' rel='stylesheet' type='text/css'>
+		
+		<!-- AngularJS -->
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.24/angular.min.js"></script>-->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.js"></script>
+		<!-- AngularJS ngRoute module -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+		
+		<!-- Angular app needs to call function in stickynav -->
+		<script src="js/stickynav.js"></script>
+		<!-- AngularJS actual app -->
+		<script src="js/app.js"></script>
 		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!--[if lt IE 9]>

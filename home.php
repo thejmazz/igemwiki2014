@@ -20,7 +20,7 @@ include ('header.php');
 					<a href=#><i class="fa fa-home"></i>Home</a>
 				</li>
 				<li>
-					<a href=#><i class="fa fa-users"></i> Team</a>
+					<a href='#/team'><i class="fa fa-users"></i> Team</a>
 				</li>
 				<li>
 					<a href=#><i class="fa fa-gears"></i> Project</a>
@@ -47,7 +47,8 @@ include ('header.php');
 
 <section id="main">
 	<div id="main-inner">
-		<div class="first container-wrapper">
+		<div id="view" ng-view></div>
+		<!--<div class="first container-wrapper">
 			<div class="container">
 				<?php include ('lorem.php'); ?>
 				<?php include ('lorem.php'); ?>
@@ -79,7 +80,7 @@ include ('header.php');
 				<h6><span>Heading 6</span></h6>
 				<?php include ('lorem.php'); ?>
 			</div>
-		</div>
+		</div>-->
 	<!--</div>--> 
 
 <!--</section>-->

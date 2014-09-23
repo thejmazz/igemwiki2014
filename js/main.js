@@ -27,11 +27,13 @@ function main(){
         if (scroll >= topDist.top) {
         	$('nav').removeClass('free');
             $('nav').addClass('stuck');
+            console.log("Changed to stuck!");
             
-            $('#main').height($('html').height() - $navHeight);
+            //$('#main').height($('html').height() - $navHeight);
         } else if (scroll < topDist.top){
             $('nav').removeClass('stuck');
             $('nav').addClass('free');
+            console.log('not stuck');
         }
     });
 }
