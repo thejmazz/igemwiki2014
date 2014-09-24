@@ -11,8 +11,7 @@
 				</footer>
 			</div> <!-- end: #main-inner --> 
 		</section> <!-- end: #main -->
-		<!-- jQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		
 		<!-- Main scripts -->
 		<script src="js/main.js"></script>
 		<script src="js/rAF.js"></script>

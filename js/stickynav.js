@@ -1,3 +1,7 @@
+// Make sure this is as the same value as in scss/style.scss
+var $navHeight = 42;
+var $navBorder = 2;
+
 var viewHeight;
 
 var $window = $(window);

@@ -11,7 +11,7 @@ http://igemwiki2014.herokuapp.com
 * ~~angularjs tabs - SPA!~~
 * ~~set up angularjs views so team can edit content directly and see changes~~
 * fix bug where footer doesn't fully show on pages where content starts with a heading
-* change active tab when changing pages
+* ~~change active tab when changing pages~~
 * change active tab when clicking back button
 * scroll on tab click if splash page showing
 * notebook styles - expandable list of dates, list of items, expand all/contract all

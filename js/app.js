@@ -32,35 +32,57 @@ function TabsCtrl($scope, $location) {
   };
 }
 
-function TeamCtrl($scope) {
-	viewHeight = $('#view').height() + $('#footer').height();
-	checkScroll();
-}
 function HomeCtrl($scope) {
 	viewHeight = $('#view').height() + $('#footer').height();
 	checkScroll();
+	clearActive();
+	$('#home').addClass('active');
+}
+function TeamCtrl($scope) {
+	viewHeight = $('#view').height() + $('#footer').height();
+	checkScroll();
+	clearActive();
+	$('#team').addClass('active');
 }
 function ProjectCtrl($scope) {
 	viewHeight = $('#view').height() + $('#footer').height();
 	checkScroll();
+	clearActive();
+	$('#project').addClass('active');
 }
 function PartsCtrl($scope) {
 	viewHeight = $('#view').height() + $('#footer').height();
 	checkScroll();
+	clearActive();
+	$('#parts').addClass('active');
 }
 function ModelingCtrl($scope) {
 	viewHeight = $('#view').height() + $('#footer').height();
 	checkScroll();
+	clearActive();
+	$('#modeling').addClass('active');
 }
 function NotebookCtrl($scope) {
 	viewHeight = $('#view').height() + $('#footer').height();
 	checkScroll();
+	clearActive();
+	$('#notebook').addClass('active');
 }
 function SafetyCtrl($scope) {
 	viewHeight = $('#view').height() + $('#footer').height();
 	checkScroll();
+	clearActive();
+	$('#safety').addClass('active');
 }
 function AttributionsCtrl($scope) {
 	viewHeight = $('#view').height() + $('#footer').height();
 	checkScroll();
+	clearActive();
+	$('#attributions').addClass('active');
+}
+
+function clearActive(){
+	$('nav ul li').each(function(){
+		$(this).removeClass('active');
+	});
 }

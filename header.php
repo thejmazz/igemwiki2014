@@ -50,6 +50,9 @@
 		<!-- Google fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Ropa+Sans:400,400italic|Contrail+One|Walter+Turncoat|Voltaire|Bangers|Oswald:400,300,700' rel='stylesheet' type='text/css'>
 		
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		
 		<!-- AngularJS -->
 		<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.24/angular.min.js"></script>-->
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.js"></script>
