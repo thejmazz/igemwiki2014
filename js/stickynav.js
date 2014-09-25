@@ -1,6 +1,4 @@
-// Make sure this is as the same value as in scss/style.scss
-var $navHeight = 42;
-var $navBorder = 2;
+
 
 var viewHeight;
 
@@ -37,15 +35,25 @@ function checkScroll() {
     $body.height(newWindowHeight + contentHeight); // allow content to be scrolled off the screen by
                                                    // pushing content down by the amount of window height
 
-    var windowScrollTop = $window.scrollTop();
-    if (windowScrollTop > 0) {                                // don't scroll if at top to avoid video getting covered
-        $window.scrollTop(windowScrollTop + windowHeightDif); // scroll by window height difference to keep content 
+    windowScrollTop2 = $window.scrollTop();
+    console.log(windowScrollTop2);
+    if (windowScrollTop2 > 0) {       
+    	console.log('3: '  + windowScrollTop2 + '; '+ windowHeightDif);                         // don't scroll if at top to avoid video getting covered
+        $window.scrollTop(topDist.top);
+        console.log('4: ' + $window.scrollTop()); 
+        //$window.scrollTop(windowScrollTop2 + windowHeightDif); // scroll by window height difference to keep content 
                                                               // in the same position on window resize
     }
 }
 
+function pushScrollToTop() {
+	console.log("stuff!!");
+	$window.scrollTop(topDist.top);
+	console.log($window.scrollTop());
+}
+
 function stickyTop() {
-    var windowScrollTop = $window.scrollTop();
+    windowScrollTop = $window.scrollTop();
     var maxScroll = ($window.height() - minHeaderHeight);
     if (windowScrollTop >= maxScroll) {
         $contentWrapper.css('position', 'fixed').css('top', minHeaderHeight); // stop wrapper top at bottom of header

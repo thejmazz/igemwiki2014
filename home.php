@@ -15,30 +15,30 @@ include ('header.php');
 	</section>
 	<nav>
 		<div class="container">
-			<ul>
+			<ul id="navbar">
 				<li id="home">
-					<a href='#/home'><i class="fa fa-home"></i>Home</a>
+					<a href='#/home' scroll-on-click><i class="fa fa-home"></i>Home</a>
 				</li>
 				<li id="team">
-					<a href='#/team'><i class="fa fa-users"></i> Team</a>
+					<a href='#/team' scroll-on-click><i class="fa fa-users"></i> Team</a>
 				</li>
 				<li id="project">
-					<a href='#/project'><i class="fa fa-gears"></i> Project</a>
+					<a href='#/project' scroll-on-click><i class="fa fa-gears"></i> Project</a>
 				</li>
 				<li id="parts">
-					<a href='#/parts'><i class="fa fa-wrench"></i> Parts</a>
+					<a href='#/parts' scroll-on-click><i class="fa fa-wrench"></i> Parts</a>
 				</li>
 				<li id="modeling">
-					<a href='#/modeling'><i class="fa fa-line-chart"></i> Modeling</a>
+					<a href='#/modeling' scroll-on-click><i class="fa fa-line-chart"></i> Modeling</a>
 				</li>
 				<li id="notebook">
-					<a href='#/notebook'><i class="fa fa-book"></i> Notebook</a>
+					<a href='#/notebook' scroll-on-click><i class="fa fa-book"></i> Notebook</a>
 				</li>
 				<li id="safety">
-					<a href='#/safety'><i class="fa fa-exclamation-triangle"></i> Safety</a>
+					<a href='#/safety' scroll-on-click><i class="fa fa-exclamation-triangle"></i> Safety</a>
 				</li>
 				<li id="attributions">
-					<a href='#/attributions'><i class="fa fa-asterisk"></i> Attributions</a>
+					<a href='#/attributions' scroll-on-click><i class="fa fa-asterisk"></i> Attributions</a>
 				</li>
 			</ul>
 		</div>
@@ -47,7 +47,7 @@ include ('header.php');
 
 <section id="main">
 	<div id="main-inner">
-		<div id="view" ng-view></div>
+		<div id="view" ng-view data-autoscroll="true"></div>
 	<!--</div>--> 
 
 <!--</section>-->

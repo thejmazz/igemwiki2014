@@ -59,6 +59,16 @@
 		<!-- AngularJS ngRoute module -->
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
 		
+		<script type="text/javascript">
+			var scroll;
+			var topDist;
+			var windowScrollTop;
+			var windowScrollTop2;
+			// Make sure this is as the same value as in scss/style.scss
+			var $navHeight = 42;
+			var $navBorder = 2;
+		</script>
+		
 		<!-- Angular app needs to call function in stickynav -->
 		<script src="js/stickynav.js"></script>
 		<!-- AngularJS actual app -->

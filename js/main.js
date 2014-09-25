@@ -9,7 +9,8 @@ var x = Math.random() * (cw - d), y = Math.random() * (ch - d);
 var speedX = 5, speedY = 5;
 var directionX = 1, directionY = 1;
 
-var topDist;
+/*var topDist;
+var scroll;*/
 
 $(document).ready(function() {
 	main();
@@ -21,18 +22,26 @@ function main(){
 	
 	
 	$(document).scroll(function () {
-        var scroll = $(this).scrollTop();
+        scroll = $(this).scrollTop();
         if (scroll >= topDist.top) {
         	$('nav').removeClass('free');
             $('nav').addClass('stuck');
-            console.log("Changed to stuck!");
+            //console.log("Changed to stuck!");
             
             //$('#main').height($('html').height() - $navHeight);
         } else if (scroll < topDist.top){
             $('nav').removeClass('stuck');
             $('nav').addClass('free');
-            console.log('not stuck');
+            //console.log('not stuck');
         }
+    });
+    
+    $('#navbar li').click(function(){
+    	console.log('1 ' + $(window).scrollTop());
+    	$(window).scrollTop(topDist.top);
+    	console.log('2 ' + $(window).scrollTop());
+    	$('#main-inner').css({'top':'0'});
+    	//$('window').scrollTop(topDist.top);
     });
 }
 
