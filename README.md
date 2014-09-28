@@ -49,8 +49,17 @@ Pages that still need content:
 * Attributions
 
 How to edit content:<br>
-First, make a github account, and send me your email and username. Then install git on your computer. Open up a terminal.
-Go to a folder where you want to clone the repo, make a new folder there or just clone into there.
+First, make a github account, and send me your email and username. Then install git on your computer.
+
+This part is partly optional but recommended, if you don't do this your commits may show up as coming from an unknown author. Check if git has your email in its config:
+
+     git config --global user.email
+
+If it prints your email associated with your git account, you are good to go. If not do
+
+     git config --global user.email "me@domain.com"
+     
+Now your commits will be authored from your account as opposed to unkown. Open up a terminal. Go to a folder where you want to clone the repo, make a new folder there or just clone into there.
 
      git clone https://github.com/thejmazz/igemwiki2014.git
 
@@ -60,7 +69,7 @@ So then that will make a folder called igemwiki2014 in whatever folder you just 
     
 The -u stands for upstream, i.e. upstream of the current branch, if you are curious. Then, to see live changes, push to the heroku repo. First you need to add it as a remote. (You only have to do this once).
 
-    git remote add git@heroku.com:igemwiki2014.git
+    git remote add heroku git@heroku.com:igemwiki2014.git
 
 Then you can list your remotes with
 
