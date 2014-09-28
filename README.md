@@ -37,8 +37,7 @@ http://igemwiki2014.herokuapp.com
 
 
 ### Content ###
-If you want to edit page content, make an account on github and send the me email you used to make an account. 
-Then I can add you as a colloborator to this repo and also add you to the heroku repo, where you can see changes live. <br>
+If you want to edit page content, make an account on github and send the me your username and email associated with that account. Then I can add you as a colloborator to this repo and also add you to the heroku repo, where you can see changes live. <br>
 Pages that still need content: 
 * Home
 * Team
@@ -50,7 +49,7 @@ Pages that still need content:
 * Attributions
 
 How to edit content:<br>
-First, make a github account, and send me your email. Then install git on your computer. Open up a terminal.
+First, make a github account, and send me your email and username. Then install git on your computer. Open up a terminal.
 Go to a folder where you want to clone the repo, make a new folder there or just clone into there.
 
      git clone https://github.com/thejmazz/igemwiki2014.git
@@ -59,7 +58,7 @@ So then that will make a folder called igemwiki2014 in whatever folder you just 
 
     git push -u origin master
     
-Then, to see live changes, push to the heroku repo. First you need to add it as a remote.
+The -u stands for upstream, i.e. upstream of the current branch, if you are curious. Then, to see live changes, push to the heroku repo. First you need to add it as a remote. (You only have to do this once).
 
     git remote add git@heroku.com:igemwiki2014.git
 
@@ -67,7 +66,7 @@ Then you can list your remotes with
 
     git remote -v
     
-and push to heroku with
+(where the -v stands for verbose, if you are curious) and push to heroku with
 
     git push -u heroku master
     
